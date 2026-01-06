@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex-row">
+
+    <div class="bg-blue-500 p-3 flex gap-5 justify-between">
+        <h2 class="text-white">ระบบสมาชิก</h2>
+        <div class="flex gap-2">
+            <button class="text-gray-700" onclick="window.location.href='index.html'">หน้าหลัก</button>
+            <button class="text-white" onclick="window.location.href='register.html'">ลงทะเบียน</button>
+            <button class="text-gray-700" onclick="window.location.href='profile.html'">โปรไฟล์</button>
+            <button class="text-gray-700" onclick="window.location.href='editProfile.html'">แก้ไขข้อมูล</button>
+        </div>
+    </div>
+
+    <div class="flex justify-center mt-7">
+        <div class="bg-white shadow-lg rounded-b-md w-4/6 flex-col">
+            <h2 class="bg-blue-500 rounded-t-md flex justify-start text-white py-1 px-5 text-xl lg:bg-blue-600">
+                ลงทะเบียนสมาชิก</h2>
+            <div class="mx-5 mt-6 mb-10 justify-center items-center space-y-4">
+
+                <div>
+                    <h1 class="pb-2">รูปภาพโปรไฟล์<span class="text-red-500">*</span></h1>
+                    <input class="block w-full text-sm
+                        file:mr-4 file:py-1.5 file:px-3 file:border-0
+                        hover:file:bg-gray-100
+                        border border-gray-300 rounded-md bg-white " type="file" accept="image/*">
+                </div>
+
+                <div>
+                    <h1 class="pb-2">ชื่อ<span class="text-red-500">*</span></h1>
+                    <input class="w-full py-1 border border-gray-300 rounded-md" type="text">
+                </div>
+
+                <div>
+                    <h1 class="pb-2">นามสกุล<span class="text-red-500">*</span></h1>
+                    <input class="w-full py-1 border border-gray-300 rounded-md" type="text">
+                </div>
+
+                <div>
+                    <h1 class="pb-2">อีเมล<span class="text-red-500">*</span></h1>
+                    <input class="w-full py-1 border border-gray-300 rounded-md" type="text">
+                </div>
+
+                <div>
+                    <h1 class="pb-2">เบอร์โทรศัพท์<span class="text-red-500">*</span></h1>
+                    <input class="w-full py-1 border border-gray-300 rounded-md" type="text">
+                </div>
+
+                <div>
+                    <h1 class="pb-2">วันเกิด<span class="text-red-500">*</span></h1>
+                    <input class="w-full py-1 border border-gray-300 rounded-md px-3" type="date" placeholder="23/11/2025">
+                </div>
+
+                <div>
+                    <h1 class="pb-2">เพศ<span class="text-red-500">*</span></h1>
+                    <button class="flex justify-between w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
+                            <h1>เลือกเพศ</h1>
+                            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                    </button>
+                </div>
+
+                <div>
+                    <h1 class="pb-2">ที่อยู๋<span class="text-red-500">*</span></h1>
+                    <textarea class="w-full border border-gray-300 rounded-md px-3 py-2" rows="4"></textarea>
+                </div>
+
+                <div>
+                    <h1 class="pb-2">รหัสผ่าน<span class="text-red-500">*</span></h1>
+                    <input class="w-full py-1 border border-gray-300 rounded-md" type="password">
+                </div>
+
+                <div>
+                    <h1 class="pb-2">ยืนยันรหัสผ่าน<span class="text-red-500">*</span></h1>
+                    <input class="w-full py-1 border border-gray-300 rounded-md" type="password">
+                </div>
+
+                <div class="flex justify-end mt-6 gap-3">
+                    <button class="bg-gray-500 text-white px-6 py-2 rounded-md w-50">ยกเลิก</button>
+                    <button class="bg-blue-500 text-white px-6 py-2 rounded-md w-50">ลงทะเบียน</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <div class="mt-10">
+        <div class=" bg-slate-700  bottom-0 left-0 right-0 p-2 text-center">
+            <h2 class="text-white">@ 2024 ระบบสมาชิก. สงวนลิขสิทธิ์.</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>

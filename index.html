@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex-row">
+
+    <div class="bg-blue-500 p-3 flex gap-5 justify-between">
+        <h2 class="text-white">ระบบสมาชิก</h2>
+        <div class="flex gap-2">
+            <button class="text-white" onclick="window.location.href='index.html'">หน้าหลัก</button>
+            <button class="text-gray-700" onclick="window.location.href='register.html'">ลงทะเบียน</button>
+            <button class="text-gray-700" onclick="window.location.href='profile.html'">โปรไฟล์</button>
+            <button class="text-gray-700" onclick="window.location.href='editProfile.html'">แก้ไขข้อมูล</button>
+        </div>
+    </div>
+
+    <div class="flex justify-center mt-7">
+        <div class="bg-white shadow-xl rounded-b-md w-4/5 flex-col">
+            <h2 class="bg-blue-500 rounded-t-md flex justify-center text-white py-1 text-xl lg:bg-blue-600">ยินดีต้อนรับสู่ระบบสมาชิก</h2>
+            <div class="mt-6 mb-10 lg:flex justify-center items-center">
+
+                <div class="flex-col border flex justify-center rounded-md p-6 m-7 lg:mr-0 lg:w-1/3 w-9/10">
+                    <h1 class="text-xl flex justify-center">ลงทะเบียนสมาชิก</h1>
+                    <h2 class="text-sm flex justify-center text-gray-500">สมัครสมาชิกใหม่เพื่อใช้งานระบบ</h2>
+                    <button class="bg-blue-500 text-white px-4 py-1 rounded mt-2 w-25 self-center" onclick="window.location.href='register.html'">ลงทะเบียน</button>
+                </div>
+
+                <div class="flex-col border flex justify-center rounded-md p-6 m-7 lg:m-5 lg:w-1/3 w-9/10">
+                    <h1 class="text-xl flex justify-center">ดูโปรไฟล์</h1>
+                    <h2 class="text-sm flex justify-center text-gray-500">ดูข้อมูลโปรไฟล์ของคุณ</h2>
+                    <button class="bg-blue-500 text-white px-4 py-1 rounded mt-2 w-25 self-center" onclick="window.location.href='profile.html'">ดูโปรไฟล์</button>
+                </div>
+
+                <div class="flex-col border flex justify-center rounded-md p-6 m-7 lg:ml-0 lg:w-1/3 w-9/10">
+                    <h1 class="text-xl flex justify-center">แก้ไขข้อมูล</h1>
+                    <h2 class="text-sm flex justify-center text-gray-500">แก้ไขข้อมูลส่วนตัวของคุณ</h2>
+                    <button class="bg-blue-500 text-white px-4 py-1 rounded mt-2 w-25 self-center" onclick="window.location.href='editProfile.html'">แก้ไขข้อมูล</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-10 lg:absolute lg:bottom-0 lg:w-full">
+        <div class=" bg-slate-700 bottom-0 left-0 right-0 p-2 text-center">
+            <h2 class="text-white">@ 2024 ระบบสมาชิก. สงวนลิขสิทธิ์.</h2>
+        </div>
+    </div>
+
+</body>
+</html>
